@@ -13,15 +13,13 @@ Easy-Url 旨在将长URL缩短为易于分享和记忆的短链接。只需输�
 ## Features
 
 - 短链接转换: 将长的Url转换为短的Url,以便进行访问.
-- 防爆破遍历: 内部使用了Luhm校验码算法以及混乱进制转换.
+- 防爆破遍历: 内部使用了Luhm校验码算法以及乱序进制转换.
 - Url 访问过期限制: 该应用生成的短链地址设置可访问的有效时间.
 - 缓存功能: 应用内部使用本地缓存,处理热点访问数据.
 
 ## Get started
 ### quick start
 要快速体验Easy-Url，可以通过docker-compose进行快速部署
-
-[easy-url-quick-start文档]()
 
 ```shell
 # 进入EasyUrl目录
@@ -85,18 +83,7 @@ curl --location '127.0.0.1:8787/api/simplify' \
 - 校验算法自定义: 目前默认的校验算法是Luhm,可改为自定义;
 - 分布式ID生成自定义: 目前默认采用的是雪花算法, 可根据需要改为其他的分布式ID, 保证整型即可;
 
-## 贡献者
-
-<a href=""><img src="?width=890" /></a>
-
-## Contact
-
-愿意参与构建Easy-Url或者是需要交流问题可以加入微信群(企业版微信和个人版本微信均可)
-
 
 ## License
 
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) Copyright (C) Apache Software Foundation
-
-## Star ⭐
-[![Stargazers over time]()]()

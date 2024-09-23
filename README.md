@@ -1,6 +1,7 @@
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ---
+#### English | [简体中文](README_cn.md)
 
 ## Introduce
 **Easy-Url**: An easy-to-use short link application.
@@ -18,7 +19,6 @@ Easy-Url is designed to shorten long URLs into easy-to-share and memorable short
 ### Quick Start
 To quickly experience Easy-Url, you can deploy it using Docker Compose.
 
-[easy-url-quick-start documentation]()
 
 ```shell
 # Enter the EasyUrl directory
@@ -84,10 +84,6 @@ After completing these three steps, you can create a dashboard and start using i
 - **Custom Validation Algorithms**: The default validation algorithm is Luhm; it can be changed to a custom one.
 - **Custom Distributed ID Generation**: Currently uses the Snowflake algorithm by default; it can be replaced with other distributed ID solutions that ensure integer output.
 
-## Contributors
-
-<a href=""><img src="?width=890" /></a>
-
 ## Contact
 
 If you wish to participate in building Easy-Url or need to discuss issues, you can join the WeChat group (both corporate and personal versions are welcome).
@@ -96,5 +92,3 @@ If you wish to participate in building Easy-Url or need to discuss issues, you c
 
 [Apache License, Version 2.0](http://www.apache.org/licenses/LICENSE-2.0.html) Copyright (C) Apache Software Foundation
 
-## Star ⭐
-[![Stargazers over time]()]()
