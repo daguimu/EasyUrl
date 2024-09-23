@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  easy-url:
+    image: daocloud.io/java:8
+    # Set services.platform based on the specified device type.
+    platform: linux/amd64
+    volumes:
+      - /tmp
+    environment:
+      logs_path: /data/easy_url/logs
+      username: short_db_user
+      password: short_db_password
+      dbName: shortdb
+      dbHost: dbhost:port
+      TZ: Asia/Shanghai
+      JAVA_OPTS: "-Xms256m -Xmx1024m "
+    command: >
+      java ${JAVA_OPTS} -Djava.security.egd=file:/dev/./urandom -jar ~/app.jar
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"

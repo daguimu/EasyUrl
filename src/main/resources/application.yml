@@ -1,0 +1,28 @@
+server:
+  port: 8080
+  #Unit is Byte; here it is 50M (50 * 1024 * 1024).
+  maxHttpHeaderSize: 52428800
+
+spring:
+  application:
+    name: easy-url
+  easy:
+    url:
+      baseUrl: http://localhost:${server.port}/
+      defaultUrl: ${spring.shorter.baseUrl}404.htm
+      # 62-base conversion of the original seed cannot be modified after initial creation; otherwise, the short link mapping cannot be restored.
+      bitStr: 0xeGcHar2F5KtPD9iX6LjoOyYngsCWAJB83URSuQVf4lqEpMwI17vdbTmNZkhz
+  datasource:
+    username: ${username}
+    password: ${password}
+    url: jdbc:mysql://${dbHost}/${dbName}?useUnicode=true&allowMultiQueries=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&useSSL=false
+
+
+
+mybatis:
+  mapper-locations: classpath*:mapper/*.xml
+
+
+
+
+

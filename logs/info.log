@@ -1,0 +1,33 @@
+2024-09-23 22:08:42.880 [] [main] INFO  com.dagm.shorter.EasyUrlApplication - Starting EasyUrlApplication on 192.168.0.103 with PID 3064 (/Users/guimu/IdeaProjects/EasyUrl/target/classes started by guimu in /Users/guimu/IdeaProjects/EasyUrl)
+2024-09-23 22:08:42.885 [] [main] INFO  com.dagm.shorter.EasyUrlApplication - No active profile set, falling back to default profiles: default
+2024-09-23 22:08:42.934 [] [main] INFO  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4982cc36: startup date [Mon Sep 23 22:08:42 CST 2024]; root of context hierarchy
+2024-09-23 22:08:44.649 [] [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8787 (http)
+2024-09-23 22:08:44.668 [] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8787"]
+2024-09-23 22:08:44.679 [] [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2024-09-23 22:08:44.679 [] [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.34
+2024-09-23 22:08:44.685 [] [localhost-startStop-1] INFO  org.apache.catalina.core.AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/Users/guimu/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.]
+2024-09-23 22:08:44.762 [] [localhost-startStop-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2024-09-23 22:08:44.762 [] [localhost-startStop-1] INFO  org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 1828 ms
+2024-09-23 22:08:44.786 [] [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2024-09-23 22:08:44.792 [] [localhost-startStop-1] INFO  org.springframework.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2024-09-23 22:08:45.263 [] [main] INFO  o.s.w.s.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/{shortCode:[0-9a-zA-Z]+}],methods=[GET]}" onto public void com.dagm.shorter.controller.api.AccessController.accessUrl(java.lang.String,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2024-09-23 22:08:45.268 [] [main] INFO  o.s.w.s.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/restore],methods=[POST]}" onto public com.dagm.shorter.dto.BaseResult<java.lang.String> com.dagm.shorter.controller.api.ShorterController.restore(com.dagm.shorter.req.AddShortRecReq)
+2024-09-23 22:08:45.268 [] [main] INFO  o.s.w.s.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/api/simplify],methods=[POST]}" onto public com.dagm.shorter.dto.BaseResult<java.lang.String> com.dagm.shorter.controller.api.ShorterController.simplify(com.dagm.shorter.req.AddShortRecReq)
+2024-09-23 22:08:45.276 [] [main] INFO  o.s.w.s.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2024-09-23 22:08:45.276 [] [main] INFO  o.s.w.s.mvc.method.annotation.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2024-09-23 22:08:45.477 [] [main] INFO  o.s.w.s.mvc.method.annotation.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4982cc36: startup date [Mon Sep 23 22:08:42 CST 2024]; root of context hierarchy
+2024-09-23 22:08:45.923 [] [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2024-09-23 22:08:45.925 [] [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'dataSource' has been autodetected for JMX exposure
+2024-09-23 22:08:45.934 [] [main] INFO  o.s.jmx.export.annotation.AnnotationMBeanExporter - Located MBean 'dataSource': registering with JMX server as MBean [com.zaxxer.hikari:name=dataSource,type=HikariDataSource]
+2024-09-23 22:08:45.949 [] [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8787"]
+2024-09-23 22:08:45.962 [] [main] INFO  org.apache.tomcat.util.net.NioSelectorPool - Using a shared selector for servlet write/read
+2024-09-23 22:08:45.973 [] [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8787 (http) with context path ''
+2024-09-23 22:08:45.976 [] [main] INFO  com.dagm.shorter.EasyUrlApplication - Started EasyUrlApplication in 3.46 seconds (JVM running for 4.656)
+2024-09-23 22:09:13.691 [] [http-nio-8787-exec-1] INFO  o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2024-09-23 22:09:13.692 [] [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2024-09-23 22:09:13.717 [] [http-nio-8787-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2024-09-23 22:09:13.729 [] [http-nio-8787-exec-1] INFO  com.dagm.shorter.interceptor.LoginInterceptor - clientIp: [null] Request access to the interface URL: [http://127.0.0.1:8787/api/simplify]
+2024-09-23 22:09:13.876 [] [http-nio-8787-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2024-09-23 22:09:14.481 [] [http-nio-8787-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2024-09-23 22:09:14.606 [] [http-nio-8787-exec-1] INFO  com.dagm.shorter.service.impl.ShorterServiceImpl - Add short URL, longStr: [https://www.baidu.com/], shorterStr: [OcSGesWD2]
+2024-09-23 22:09:22.339 [] [http-nio-8787-exec-2] INFO  com.dagm.shorter.interceptor.LoginInterceptor - clientIp: [null] Request access to the interface URL: [http://localhost:8787/OcSGesWD2]
